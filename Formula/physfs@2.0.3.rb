@@ -5,6 +5,11 @@ class PhysfsAT203 < Formula
   sha256 "ca862097c0fb451f2cacd286194d071289342c107b6fe69079c079883ff66b69"
   head "https://hg.icculus.org/icculus/physfs/", using: :hg
 
+  bottle do
+    root_url "https://github.com/btb/homebrew-oldversions/releases/download/physfs@2.0.3-2.0.3"
+    sha256 cellar: :any, catalina: "663c43100542576f828a62626a77fe07d34399e517e25fd6b536bdf327072f4e"
+  end
+
   depends_on "cmake" => :build
 
   def install
